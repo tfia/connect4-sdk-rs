@@ -14,7 +14,7 @@ cargo build --lib --release
 
 这会在 `target/release` 下生成 `libstrategy.so`。该动态库导出了 `getPoint` 和 `clearPoint` 两个函数，签名和意义与官方 C++ SDK 完全相同且兼容 C ABI，因此可以像对 C++ 编写的 AI 进行本地测试那样，使用课程组祖传的本地测试框架进行测试。
 
-Saiblo 上的编译命令为
+Saiblo 上的默认编译命令为
 
 ``` bash
 cargo build --offline -j1 --release
